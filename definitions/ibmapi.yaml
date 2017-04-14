@@ -1051,13 +1051,12 @@ definitions:
     properties:
       body:
         type: string
-      id:
-        type: string
       title:
         type: string
+      id:
+        $ref: '#/definitions/ObjectID'
     required:
       - body
-      - id
       - title
     additionalProperties: false
   ObjectID:

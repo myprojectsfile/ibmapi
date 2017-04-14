@@ -10,15 +10,13 @@
       "type": "string",
       "required": true
     },
-    "id": {
-      "type": "string",
-      "id": true,
-      "required": true,
-      "isArray": false
-    },
     "title": {
       "type": "string",
       "required": true
+    },
+    "id": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],
