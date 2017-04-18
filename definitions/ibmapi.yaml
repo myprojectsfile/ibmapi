@@ -192,7 +192,9 @@ paths:
     put:
       tags:
         - User
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: User.upsert__put_Users
       parameters:
         - name: data
@@ -211,7 +213,9 @@ paths:
     patch:
       tags:
         - User
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: User.upsert__patch_Users
       parameters:
         - name: data
@@ -235,7 +239,9 @@ paths:
       parameters:
         - name: filter
           in: query
-          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
           required: false
           type: string
           format: JSON
@@ -251,7 +257,9 @@ paths:
     post:
       tags:
         - User
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: User.replaceOrCreate
       parameters:
         - name: data
@@ -271,7 +279,9 @@ paths:
     post:
       tags:
         - User
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: User.upsertWithWhere
       parameters:
         - name: where
@@ -351,7 +361,9 @@ paths:
           format: JSON
         - name: filter
           in: query
-          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
           required: false
           type: string
           format: JSON
@@ -382,7 +394,9 @@ paths:
     put:
       tags:
         - User
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'User.prototype.updateAttributes__put_Users_{id}'
       parameters:
         - name: data
@@ -407,7 +421,9 @@ paths:
     patch:
       tags:
         - User
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'User.prototype.updateAttributes__patch_Users_{id}'
       parameters:
         - name: data
@@ -433,7 +449,9 @@ paths:
     post:
       tags:
         - User
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: User.replaceById
       parameters:
         - name: id
@@ -464,7 +482,9 @@ paths:
       parameters:
         - name: filter
           in: query
-          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
           required: false
           type: string
           format: JSON
@@ -543,20 +563,21 @@ paths:
             type: object
         - name: include
           in: query
-          description: Related objects to include in the response. See the description of return value for more details.
-          required: false
+          description: >-
+            Related objects to include in the response. See the description of
+            return value for more details.
+          required: true
           type: string
-          format: JSON
       responses:
         '200':
           description: Request was successful
           schema:
             description: >+
-              The response body contains properties of the AccessToken created on
-              login.
+              The response body contains properties of the AccessToken created
+              on login.
 
-              Depending on the value of `include` parameter, the body may contain
-              additional properties:
+              Depending on the value of `include` parameter, the body may
+              contain additional properties:
 
 
 
@@ -663,7 +684,9 @@ paths:
     put:
       tags:
         - Post
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: Post.upsert__put_Posts
       parameters:
         - name: data
@@ -682,7 +705,9 @@ paths:
     patch:
       tags:
         - Post
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: Post.upsert__patch_Posts
       parameters:
         - name: data
@@ -706,7 +731,9 @@ paths:
       parameters:
         - name: filter
           in: query
-          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
           required: false
           type: string
           format: JSON
@@ -722,7 +749,9 @@ paths:
     post:
       tags:
         - Post
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: Post.replaceOrCreate
       parameters:
         - name: data
@@ -742,7 +771,9 @@ paths:
     post:
       tags:
         - Post
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: Post.upsertWithWhere
       parameters:
         - name: where
@@ -822,7 +853,9 @@ paths:
           format: JSON
         - name: filter
           in: query
-          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
           required: false
           type: string
           format: JSON
@@ -853,7 +886,9 @@ paths:
     put:
       tags:
         - Post
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'Post.prototype.updateAttributes__put_Posts_{id}'
       parameters:
         - name: data
@@ -878,7 +913,9 @@ paths:
     patch:
       tags:
         - Post
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'Post.prototype.updateAttributes__patch_Posts_{id}'
       parameters:
         - name: data
@@ -904,7 +941,9 @@ paths:
     post:
       tags:
         - Post
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: Post.replaceById
       parameters:
         - name: id
@@ -935,7 +974,9 @@ paths:
       parameters:
         - name: filter
           in: query
-          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
           required: false
           type: string
           format: JSON
@@ -1046,6 +1087,7 @@ definitions:
         $ref: '#/definitions/ObjectID'
     required:
       - email
+      - username
     additionalProperties: false
   Post:
     properties:
@@ -1061,7 +1103,7 @@ definitions:
     additionalProperties: false
   ObjectID:
     type: string
-    pattern: "^[a-fA-F\\d]{24}$"
+    pattern: '^[a-fA-F\d]{24}$'
 basePath: /api
 swagger: '2.0'
 info:
