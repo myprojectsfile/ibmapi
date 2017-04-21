@@ -6,22 +6,20 @@ module.exports = function(app) {
  var RoleMapping = app.models.RoleMapping;
 
 User.create([
-    {username: 'John', email: 'john@doe.com', password: 'opensesame'},
-    {username: 'Jane', email: 'jane@doe.com', password: 'opensesame'},
-    {username: 'Bob', email: 'bob@projects.com', password: 'opensesame'}
+    {username: 'admin', email: 'admin@khodamooz.com', password: '123'}
   ], function(err, users) {
     if (err) console.log(err);
 
     //create the admin role
     Role.create({
-      name: 'admin'
+      name: 'administrator'
     }, function(err, role) {
       if (err) console.log(err);
 
       //make bob an admin
       role.principals.create({
         principalType: RoleMapping.USER,
-        principalId: users[2].id
+        principalId: users[0].id
       }, function(err, principal) {
         console.log(err);
       });
